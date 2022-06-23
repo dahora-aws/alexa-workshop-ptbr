@@ -8,8 +8,8 @@ Como construir uma skill simples chamada "Hora do Jogo"
 
 ## ![Módulo 2 - Adicionando habilidades de conversação (intents e slots)](modulo-2)
 
-Como criar intenções e slots personalizados e, em seguida, coletar esses slots passo a passo com delegação automática para criar a skill de conversação.  
+Como criar intenções, slots personalizados e coletar esses slots com delegação automática para criar a skill de conversação.  
 
 ## ![Módulo 3 - Fazendo uso de atributos persistentes](modulo-3)
 
-Você aprenderá como ajudar sua skill a lembrar de informações através de atributos persistentes.
+Como ajudar sua skill a lembrar de informações através de atributos persistentes.
