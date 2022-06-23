@@ -638,14 +638,14 @@ if session_attributes["current_celeb"] == None:
 34.  À esquerda, localize o ID da sua tabela na coluna com uma lista de tabelas. O serviço seleciona sua tabela por padrão.
 <br>
 
-IMG21
+![](img/image21.png)
 
 <br>
 
 35.  À direita, clique em **Explore table items** para visualizar a lista de registros.
 <br>
 
-IMG22
+![](img/image22.png)
 <br>
 
 Você deve ter apenas um registro porque o DynamoDB chaveia cada registro para um ID exclusivo para um cliente.
@@ -666,7 +666,7 @@ No lado esquerdo da visualização da guia Itens, na coluna id, observe a string
 37. No menu **Actions**, selecione **Delete items.**
 <br>
 
-IMG23
+![](img/image23.png)
 
 <br>
 
