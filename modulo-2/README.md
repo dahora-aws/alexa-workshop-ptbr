@@ -12,13 +12,13 @@ O que você vai aprender neste módulo:
 1.  No console do desenvolvedor, clique na guia **Build** e, no menu à esquerda, clique em **Interaction Model** e, em seguida, clique em **Intents**.
 <br>
 
-IMG7
+![](img/image7.png)
 <br>
 
 2. No painel direito, em **Intents** , clique no botão **+Add Intent** . Na página **Add Intent** , você pode criar um intent personalizado ou usar um intent existente da biblioteca integrada.
 <br>
 
-IMG8
+![](img/image8.png)
 <br>
 
 3.  Na caixa de pesquisa, digite "yes" para encontrar a intent.
@@ -27,7 +27,7 @@ IMG8
 4.  Na linha **AMAZON.YesIntent** , clique em **+ Add Intent** e, em seguida, clique em **view**. Agora você verá o **AMAZON.YesIntent** na sua lista de intents.
 <br>
 
-IMG9
+![](img/image9.png)
 <br>
 
 5.  Na parte superior da página, clique em **Save model**.
@@ -36,13 +36,13 @@ IMG9
 6.  No menu à esquerda, clique em **Interfaces**.
 <br>
 
-IMG10
+![](img/image10.png)
 <br>
 
 7. No painel direito, role para baixo até **Alexa Presentation Language** e clique para alternar na interface, expandirá as opções para mostrar todos os perfis disponíveis.
 <br>
 
-IMG11
+![](img/image11.png)
 <br>
 
 8.  Na parte superior da página, clique em **Save interfaces** e depois clique em **Build Model.**
@@ -268,9 +268,11 @@ lambda_handler = sb.lambda_handler()
 26.  Clique em **Save** e, em seguida, clique em **Deploy** para implantar seu código e depois teste sua skill.
 <br>
 
-IMG12
+![](img/image12.png)
 <br>
-IMG13
+
+![](img/image13.png)
+
 <br>
 
 #### Adicione uma intenção GetBirthday personalizada com slots personalizados e delegação de diálogo
@@ -285,7 +287,7 @@ IMG13
 29.  No painel direito, em **Intents**, clique no botão **+Add Intent**.
 <br>
 
-IMG14
+![](img/image14.png)
 <br>
 
 30. Selecione o botão de opção **Create custom intent,** insira **GetBirthdayIntent** e clique no botão **Create custom intent**.
@@ -300,7 +302,7 @@ IMG14
 32.  Clique no **sinal de mais (+)** à direita da tela para adicionar seus slots.
 <br>
 
-IMG15
+![](img/image15.png)
 <br>
 
 > Dica: Como escrever enunciados de amostra  
@@ -321,7 +323,7 @@ IMG15
 33.  Na caixa de texto **Sample Utterances**, adicione os slots individuais sozinhos. Adicione um enunciado de amostra de apenas **{month}**. Em seguida, adicione um enunciado de amostra de apenas **{year}**. Às vezes, você receberá uma resposta incompleta e a Alexa ainda precisa saber que pertence a essa intent.
 <br>
 
-IMG16
+![](img/image16.png)
 <br>
 
 34.  Role a página para baixo para ver a seção **Intent Slots** que lista os slots que você criou.
@@ -330,7 +332,7 @@ IMG16
 35.  Na linha de **month**, clique no menu **Select a slot type** e digite **Month**. Essa ação retorna um tipo de slot integrado da Amazon, **AMAZON.Month**.
 <br>
 
-IMG17
+![](img/image17.png)
 <br>
 
 36.  Na linha de **Year**, clique no menu **Select a slot type** e digite **four**. Essa ação retorna um tipo de slot integrado da Amazon, **AMAZON.FOUR_DIGIT_NUMBER**.
@@ -351,7 +353,7 @@ IMG17
 41.  Insira prompts e enunciados para fornecer várias maneiras pelas quais você deseja que o Alexa solicite as informações e as maneiras pelas quais você prevê que os usuários possam responder.
 <br>
 
-IMG18
+![](img/image18.png)
 <br>
 
 42.  Quando terminar de adicionar a pergunta e os exemplos de enunciado, role até a parte superior da tela, clique em **Save Model,** volte à página **Intents/GetBirthdayIntent** e execute as mesmas etapas com o intent slot **year**.
@@ -473,7 +475,10 @@ from celebrityFunctions import get_random_celeb
 55.  No canto superior direito da página da guia **Code,** clique em **Save** e, em seguida, clique em **Deploy** para implantar seu código. Teste sua habilidade, você deve receber uma pergunta com o nome de uma celebridade.
 <br>
 
-IMG19
+![](img/image19.png)
+<br>
+
+![](img/image20.png)
 <br>
 
 #### Adicione o `GetBirthdayIntentHandler` para receber dados da intent **GetBirthday**
