@@ -532,6 +532,7 @@ O segundo interceptor de resposta, `LoggingResponseInterceptor`, simplesmente re
 
 24. Substitua o código a seguir.
 <br>
+
 ```
 speak_output =  f"Bem-vindo ao Jogo da Educação. " \
             f"Eu vou te falar o nome de uma celebridade e " \
