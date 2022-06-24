@@ -362,7 +362,7 @@ ask-sdk-dynamodb-persistence-adapter==1.15.0
 ```
 <br>
 
-14. Clique em **Save** e depois **Deploy**, clique em **Implantar** para implantar seu código.
+14. Clique em **Save** e depois **Deploy**, para implantar seu código.
 <br>
 
 15. No arquivo `lambda_function.py`, na parte superior do arquivo, localize o código a seguir. 
