@@ -79,11 +79,11 @@ speak_output = "Olá, bem-vindo ao Jogo da Educação, sua primeira skill da Ale
 <br>
 
 ```
-speak_output = f"Bem-vindo ao Jogo da Educação. " \  
-	f"Eu vou te falar o nome de uma celebridade e " \  
-	f"você vai tentar advinhar a data de nascimento. " \  
-	f"Vamos ver quantas você acerta! " \  
-	f"Pronto para começar? "
+speak_output = f"Bem-vindo ao Jogo da Educação. " \
+                f"Eu vou te falar o nome de uma celebridade e " \
+                f"você vai tentar advinhar a data de nascimento. " \
+                f"Vamos ver quantas você acerta! " \
+                f"Pronto para começar? "
 ```
 <br>
 
