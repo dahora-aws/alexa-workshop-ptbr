@@ -40,20 +40,20 @@ speak_output =  f'Em qual mês e ano {celeb["name"]} nasceu?'
 session_attributes = handler_input.attributes_manager.session_attributes
         
 speak_output = ''
-    
+
 # check if there's a current celebrity. If so, repeat the question and exit.
 if 'current_celeb' in session_attributes.keys() and session_attributes["current_celeb"] != None:
-        speak_output = f'Em qual mês e ano {session_attributes["current_celeb"]["name"]} nasceu?'
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                .ask(speak_output)
-                .response
-        )
+    speak_output = f'Em qual mês e ano {session_attributes["current_celeb"]["name"]} nasceu?'
+    return (
+        handler_input.response_builder
+            .speak(speak_output)
+            .ask(speak_output)
+            .response
+    )
 
 # Check for past celebrities array and create it if not available
 if 'past_celebs' not in session_attributes.keys():
-        session_attributes["past_celebs"] = []
+    session_attributes["past_celebs"] = []
 
 # Import the celebrity functions and get a random celebrity.
 from celebrityFunctions import get_random_celeb
@@ -63,16 +63,16 @@ subtitle = 'Vamos lá, diga o mês e ano de nascimento!'
 
 # Check to see if there are any celebrities left.
 if celeb["id"] == 0:
-        speak_output = 'Acabaram as celebridades. Obrigado por jogar!'
-        title = 'Fim de Jogo'
-        subtitle = ''
+    speak_output = 'Acabaram as celebridades. Obrigado por jogar!'
+    title = 'Fim de Jogo'
+    subtitle = ''
 else:
-        # set the "current_celeb" attribute
-        session_attributes["current_celeb"] = celeb
-        # save the session attributes
-        handler_input.attributes_manager.session_attributes = session_attributes
-        # Ask the question
-        speak_output = f'Em qual mês e ano {session_attributes["current_celeb"]["name"]} nasceu?'
+    # set the "current_celeb" attribute
+    session_attributes["current_celeb"] = celeb
+    # save the session attributes
+    handler_input.attributes_manager.session_attributes = session_attributes
+    # Ask the question
+    speak_output = f'Em qual mês e ano {session_attributes["current_celeb"]["name"]} nasceu?'
 ```
 <br>
 
