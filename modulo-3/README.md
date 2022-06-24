@@ -152,39 +152,39 @@ Com o código acima, você obtém os valores dos slots e os envia junto com a ce
 <br>
 
 ```
-# Add the celebrity to the list of past celebs.
-# Store the value for the rest of the function,
-# and set the current celebrity to None
-session_attributes["past_celebs"].append(session_attributes["current_celeb"])
-cname = session_attributes["current_celeb"]["name"]
-session_attributes["current_celeb"] = None
-
-# Let's now check if there's a current score. If not, initialize it.
-if 'score' not in session_attributes.keys():
-session_attributes["score"] = 0
-
-# We'll need variables for our visual. Let's initialize them.
-title = ''
-subtitle = ''
-
-# Did they get it?
-if winner:
-session_attributes["score"] = session_attributes["score"] + 1
-title = 'Parabéns!'
-subtitle = 'Quer tentar acertar outra?'
-speak_output = f"Muito bom, acertou na mosca o nascimento de {cname}! Você está com " \
-    f"{session_attributes['score']} pontos. Preparado para a próxima?"
-else:
-title = 'Ah não...resposta errada!'
-subtitle = 'Quer tentar outra?'
-speak_output = f"Xi, resposta errada. Este não é o mês e ano correto do nascimento de " \
-    f"{cname}. Quem sabe na próxima. Pronto para a próxima pergunta?"
-
-# store all the updated session data
-handler_input.attributes_manager.session_attributes = session_attributes
-#speak_output = f'Sua resposta foi {month} de {year}. Quer tentar de novo?'
-#                            "Title": f'{month} de {year}',
-#                            "Subtitle": 'Tentar de novo?',
+        # Add the celebrity to the list of past celebs.
+        # Store the value for the rest of the function,
+        # and set the current celebrity to None
+        session_attributes["past_celebs"].append(session_attributes["current_celeb"])
+        cname = session_attributes["current_celeb"]["name"]
+        session_attributes["current_celeb"] = None
+        
+        # Let's now check if there's a current score. If not, initialize it.
+        if 'score' not in session_attributes.keys():
+            session_attributes["score"] = 0
+        
+        # We'll need variables for our visual. Let's initialize them.
+        title = ''
+        subtitle = ''
+        
+        # Did they get it?
+        if winner:
+            session_attributes["score"] = session_attributes["score"] + 1
+            title = 'Parabéns!'
+            subtitle = 'Quer tentar acertar outra?'
+            speak_output = f"Muito bom, acertou na mosca o nascimento de {cname}! Você está com " \
+                f"{session_attributes['score']} pontos. Preparado para a próxima?"
+        else:
+            title = 'Ah não...resposta errada!'
+            subtitle = 'Quer tentar outra?'
+            speak_output = f"Xi, resposta errada. Este não é o mês e ano correto do nascimento de " \
+                f"{cname}. Quem sabe na próxima. Pronto para a próxima pergunta?"
+            
+        # store all the updated session data
+        handler_input.attributes_manager.session_attributes = session_attributes
+        #speak_output = f'Sua resposta foi {month} de {year}. Quer tentar de novo?'
+        #                            "Title": f'{month} de {year}',
+        #                            "Subtitle": 'Tentar de novo?',
 ```
 <br>
 
